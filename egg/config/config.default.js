@@ -9,5 +9,15 @@ module.exports = appInfo => {
   // add your config here
   config.middleware = [];
 
+  config.io={
+    namespace: {
+      '/': {
+        connectionMiddleware: [ 'auth' ],
+        packetMiddleware: [ ], // 针对消息的处理暂时不实现
+      }
+    }
+  }
+
   return config;
 };
+
