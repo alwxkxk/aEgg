@@ -17,3 +17,6 @@ Egg框架-个人学习
 - /aegg 使用egg-init一键生成
 - /vue 使用[@vue/cli 3.x](https://cli.vuejs.org/zh/guide/)一键生成
 
+## 部署
+- 注意修改vue/socket.io的路径
+

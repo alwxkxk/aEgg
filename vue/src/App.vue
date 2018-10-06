@@ -18,16 +18,14 @@ export default {
       this.isConnected = true;
       console.log("connect");
       let self = this
-      setInterval(()=>{
-        self.$socket.emit("chat","test body");
-      },1000)
+      self.$socket.emit("system-room.join");
     },
     disconnect() {
       this.isConnected = false;
       console.log("disconnect");
     },
-    res(data){
-      console.log("res:",data);
+    msg(data){
+      console.log("msg:",data);
     }
   }
 }
